@@ -35,9 +35,15 @@ to install dependency
 npm i <packagename>
 
 package.json
-holds meta information about js project
+holds meta information about js project including dependencies
 to start project and automate
 npm init
+
+never push node_modules when its generated
+if project has package.json npm install installs all dependencies
+
+
+nodemon dependency that restarts nodejs app in file changes
 
 
 */
