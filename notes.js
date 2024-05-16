@@ -31,11 +31,13 @@ const server = http.createServer((req, res) => {
 
 server.listen(8000);
 
-to start node project
-npm init
-
 to install dependency
 npm i <packagename>
+
+package.json
+holds meta information about js project
+to start project and automate
+npm init
 
 
 */
