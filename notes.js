@@ -13,12 +13,11 @@ all files modules by default
 module.exports = {} to share
 require to use modules
 
+built in modules:
+  - os
+  - path
+  - fs
+  - http
+
 */
 
-const john = 'john';
-const me = 'samin';
-const sayHi = (name) => {
-  console.log(`hello there ${name}`);
-}
-
-module.exports = {john, me, sayHi};

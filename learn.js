@@ -1,10 +1,3 @@
-const names = require("./notes");
-
-console.log(names.me);
-
-const sayHi = (name) => {
-  console.log(`hello there ${name}`);
-}
-
-sayHi("monkey");
+const me = require("./notes")
+console.log(me.singlePerson.name);
 
