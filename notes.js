@@ -19,5 +19,24 @@ built in modules:
   - fs
   - http
 
+
+making a server using the javascript http module
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  console.log(req);
+  res.write("home page");
+  res.end();
+})
+
+server.listen(8000);
+
+to start node project
+npm init
+
+to install dependency
+npm i <packagename>
+
+
 */
 
