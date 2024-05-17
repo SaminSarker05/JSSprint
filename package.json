@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node learn.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon filereadwrite.js"
+    "dev": "nodemon learn.js"
   },
   "author": "samin sarker",
   "license": "ISC",

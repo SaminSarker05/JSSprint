@@ -13,6 +13,9 @@ all files modules by default
 module.exports = {} to share
 require to use modules
 
+
+========= MODULES
+
 built in modules:
   - os
   - path
@@ -30,6 +33,9 @@ const server = http.createServer((req, res) => {
 })
 
 server.listen(8000);
+
+
+========= MISC
 
 to install dependency
 npm i <packagename>
@@ -50,6 +56,9 @@ js normally single threaded: executes line by line
 
 npm - node package manager
 
+
+========= ASYNC & PROMISES
+
 async feature allows concurrent execution of code 
 - other code can run while waiting for previous lines
 
@@ -65,6 +74,15 @@ await keyword pauses execution of function untill promise is settled
 always wrap in try catch block
 await only works with async functions 
 need to mark functions as async
+
+
+========= EVENTS
+- even driven programming: flow of program determined by user events
+- used heavily server side and in node.js
+use events module; most important methods on and emit
+
+========= STREAMS
+- used to read write sequentially
 
 */
 
