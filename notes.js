@@ -61,5 +61,10 @@ promise - js object represents value during an async operation
 in js can chain methods
 .then().catch()
 
+await keyword pauses execution of function untill promise is settled
+always wrap in try catch block
+await only works with async functions 
+need to mark functions as async
+
 */
 
