@@ -40,11 +40,20 @@ to start project and automate
 npm init
 
 never push node_modules when its generated
-if project has package.json npm install installs all dependencies
+if project has package.json <npm install> installs all dependencies
 
+nodemon dependency that restarts nodejs app if file changes
 
-nodemon dependency that restarts nodejs app in file changes
+event loop:
+allows node js to perform non I/O operations by offloading to system kernal
+js normally single threaded: executes line by line
 
+npm - node package manager
+
+async feature allows concurrent execution of code 
+- other code can run while waiting for previous lines
+
+callback - a function intended to be called a later time
 
 */
 
