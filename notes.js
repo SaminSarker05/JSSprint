@@ -55,5 +55,11 @@ async feature allows concurrent execution of code
 
 callback - a function intended to be called a later time
 
+promise - js object represents value during an async operation
+- cleaner approach to callback based async code
+
+in js can chain methods
+.then().catch()
+
 */
 
