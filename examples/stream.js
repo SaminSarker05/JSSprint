@@ -7,7 +7,7 @@ stream.on('data', (result) => {
   console.log(result);
 })
 
-
+// using writefilesync to write to new file
 const {writeFileSync} = require('fs');
 
 for (let i = 0; i < 1000; ++i) {
