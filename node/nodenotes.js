@@ -81,6 +81,7 @@ need to mark functions as async
 - used heavily server side and in node.js
 use events module; most important methods on and emit
 
+
 ========= STREAMS
 - used to read write sequentially
 - EMIT EVENTS
@@ -91,6 +92,28 @@ use events module; most important methods on and emit
   - transform; modifying data
 
 - buffer; temporary storage
+
+
+========= SERVERS
+- when user types a url they are making a request to server; serves resources
+- requests and responses sent by http protocals
+
+node is js serverside runtime environment 
+express is web application framework for node js
+cloud is conglomeration of servers
+
+
+========= HTTP REQUESTS (users) and RESPONSES
+- start line
+- optional headers -> meta info
+- optional body (payload)
+
+http methods: 
+GET - read
+POST - insert
+PUT - update
+DELETE - delete
+
 
 */
 
