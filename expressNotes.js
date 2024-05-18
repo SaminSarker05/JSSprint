@@ -23,4 +23,22 @@ app.listen ports
 
 browsers perform GET request by default
 
+use keyword used for middleware registration, ie static files
+static files - not changed; image, styles, js
+
+
+express usages
+API or SSR (sever side rendering)
+
+API (application programming interface) interface to interact with data
+- send data
+- res.json()
+
+SSR
+- send template
+- res.render()
+
+JSON - javascript object notation
+
+
 */
