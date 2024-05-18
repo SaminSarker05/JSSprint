@@ -4,7 +4,6 @@ const util = require('util');
 const readPromise = util.promisify(readFile);
 const writePromise = util.promisify(writeFile);
 
-
 const start = async () => {
   try {
     const first = await readPromise('./learn.js', 'utf8');
@@ -15,9 +14,7 @@ const start = async () => {
   }
 }
 
-// start();
-
-
+start();
 
 // async function for concurrent execution of lines
 // use promises which represent async operations to streamline process
@@ -47,5 +44,4 @@ const start = async () => {
     console.log(err);
   }
 }
-
 */

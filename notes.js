@@ -83,6 +83,14 @@ use events module; most important methods on and emit
 
 ========= STREAMS
 - used to read write sequentially
+- EMIT EVENTS
+4 types:
+  - writable
+  - readable
+  - duplex; reading and writing
+  - transform; modifying data
+
+- buffer; temporary storage
 
 */
 
