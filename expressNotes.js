@@ -41,4 +41,17 @@ SSR
 JSON - javascript object notation
 
 
+find method:
+- searches for element in an array
+- takes in callback function with a boolean expression
+
+const found = array.find((element) => {element.id === 10});
+
+map method:
+creates a new array with specifications of callback func
+
+
+
+
+
 */

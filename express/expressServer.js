@@ -1,6 +1,6 @@
 const express = require('express');
 
-// making instance of express instance
+// making express instance
 const app = express();
 app.get('/', (req, res) => { // callback function called everytime user makes request at /
   res.status(200).send('home');
