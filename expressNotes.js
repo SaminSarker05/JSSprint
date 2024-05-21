@@ -1,7 +1,13 @@
 /* 
+
+====== PORTS
+
 - port is a communication endpoint
 - different ports for different traffic
 - always need to use end for response to send back data
+
+
+====== HTTP METHODS
 
 http methods: 
 GET - read
@@ -26,6 +32,8 @@ browsers perform GET request by default
 use keyword used for middleware registration, ie static files
 static files - not changed; image, styles, js
 
+
+====== API DEVELOPMENT
 
 express usages
 API or SSR (sever side rendering)
@@ -69,5 +77,17 @@ allows expansion of an iterable and copying
 
 array.slice(inclusive, exclusive)
 makes a slice of the provided array
+
+
+====== MIDDLEWARE
+- functions that request during request to the server
+- has access to request and response objects
+- between request and response
+- must specify passing between middleware using next() method
+
+use keyword to use middleware across all url patterns
+app.use('path', func)
+mounts middleware at specified path
+
 
 */
