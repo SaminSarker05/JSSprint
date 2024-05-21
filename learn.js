@@ -22,10 +22,31 @@ app.get('/api/products', (req, res) => {
   res.json(singleProduct);
 })
 
+// use :param to pass in paramaters
 app.get('/api/products/:productId', (req, res) => {
-  console.log(req.params);
-  const singleProduct = products.find((product) => { product.id == req.params['productId']})
-  res.json(singleProduct);
+  const { productId } = req.params;
+  const singleProduct = products.find((product) => { 
+    if (product.id === Number(productId)) {
+      return product;
+    }
+  })
+  if (!singleProduct) {
+    return res.json(404).send('product does not exist');
+  }
+  return res.json(singleProduct);
+})
+
+app.get('/api/v1/query', (req, res) => {
+  const {search, limit} = req.query;
+  console.log(search, limit);
+  let sortedProducts = [...products];
+  if (search) {
+    sortedProducts = sortedProducts.filter((product) => {return product.name.startsWith(search)})
+  }
+  if (limit) {
+    sortedProducts = sortedProducts.slice(0, Number(limit));
+  }
+  res.status(200).json(sortedProducts);
 
 
 })

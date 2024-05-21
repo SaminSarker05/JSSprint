@@ -40,18 +40,34 @@ SSR
 
 JSON - javascript object notation
 
-
 find method:
 - searches for element in an array
 - takes in callback function with a boolean expression
+
+e.g
+const singleProduct = products.find((product) => { 
+    if (product.id === Number(productId)) {
+      return product;
+    }
+  })
 
 const found = array.find((element) => {element.id === 10});
 
 map method:
 creates a new array with specifications of callback func
 
+can use route paramaters to get specific resources
 
+url parameters: send info to server using url
+- used for querying database
+- can pass in key value pairs
+http://localhost:8000/api/v1/query?name=samin&age=19
+how to pass in
 
+spread operator [...name]
+allows expansion of an iterable and copying
 
+array.slice(inclusive, exclusive)
+makes a slice of the provided array
 
 */
