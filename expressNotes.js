@@ -94,4 +94,22 @@ executed in order of array
 
 - express also provides middleware and third parties
 
+- can make POST request using application 
+- js package axios used for send http requests
+- can use axios in frontend to send http request
+
+
+====== POSTMAN
+- tool for testing APIs
+- to send json send raw text
+
+- PUT for editing data
+- convention to use route parameters to specify item to update
+- use params to specify item and payload for updated data
+
+- DELETE for deling data
+
+
+====== EXPRESS ROUTERS
+
 */
