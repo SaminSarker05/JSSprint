@@ -115,4 +115,9 @@ executed in order of array
 - import routers as modules
 - make router using express.Router()
 
+- use controllers for more organization
+controllers = hold (req, res) callback functions
+routers = define routing
+use router in main app.js file as a middleware
+
 */
