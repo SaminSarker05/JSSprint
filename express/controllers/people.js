@@ -1,4 +1,4 @@
-const {people} = require('../data');
+const {people} = require('../../node/data');
 
 const getPeople = (req, res) => {
   res.status(200).json({status:true, data:people});
