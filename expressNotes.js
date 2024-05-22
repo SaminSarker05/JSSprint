@@ -89,5 +89,9 @@ use keyword to use middleware across all url patterns
 app.use('path', func)
 mounts middleware at specified path
 
+for multuoke middleware plan in an array
+executed in order of array
+
+- express also provides middleware and third parties
 
 */
