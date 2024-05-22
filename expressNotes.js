@@ -111,5 +111,8 @@ executed in order of array
 
 
 ====== EXPRESS ROUTERS
+- use routers to organize url endpoints
+- import routers as modules
+- make router using express.Router()
 
 */
