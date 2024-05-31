@@ -65,12 +65,15 @@ map method:
 creates a new array with specifications of callback func
 
 can use route paramaters to get specific resources
+/:id
+store in request.params in payload
+const { productId } = req.params;
 
-url parameters: send info to server using url
+url query: send info to server using url
 - used for querying database
 - can pass in key value pairs
 http://localhost:8000/api/v1/query?name=samin&age=19
-how to pass in
+const {search, limit} = req.query;
 
 spread operator [...name]
 allows expansion of an iterable and copying
@@ -108,10 +111,12 @@ executed in order of array
 - use params to specify item and payload for updated data
 
 - DELETE for deling data
+- POST - part of req.body
+- NEED TO INCLUDE MIDDLEWARE TO PARSE POST request into a json body
 
 
 ====== EXPRESS ROUTERS
-- use routers to organize url endpoints
+- use routers to organize url HTTP endpoints
 - import routers as modules
 - make router using express.Router()
 
