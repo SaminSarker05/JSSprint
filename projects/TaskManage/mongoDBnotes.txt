@@ -1,0 +1,17 @@
+free cloud hosting
+noSQL
+non relational -> doesnt require row/column architecture; store instead as json
+collection = column = table
+document = row -> holds key value pairs
+
+MONGODB ATLAS - cloud option for database good free tier
+clustor - group of servers to choose for database deployment - free tier available
+
+connect to clustor from node application
+
+database holds collections
+
+MONGOOSE = enables easy development with node; a node module
+
+connect to DB before spinning up server
+use async and await keywords to make a promise with try catch block

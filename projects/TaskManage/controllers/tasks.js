@@ -6,13 +6,13 @@ const createTask = (req, res) => {
   res.status(200).json(req.body);
 }
 const getTask = (req, res) => {
-  res.send("get single task");
+  res.json({method: "get task", details: req.params});
 }
 const updateTask = (req, res) => {
-  res.send("update task");
+  res.json({method: "update task", details: req.params});
 }
 const deleteTask = (req, res) => {
-  res.send("delete task");
+  res.json({method: "delete task", details: req.params});
 }
 
 module.exports = {
