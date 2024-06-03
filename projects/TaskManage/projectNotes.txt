@@ -1,3 +1,6 @@
+
+===== MONGODB
+
 free cloud hosting
 noSQL
 non relational -> doesnt require row/column architecture; store instead as json
@@ -12,6 +15,16 @@ connect to clustor from node application
 database holds collections
 
 MONGOOSE = enables easy development with node; a node module
+mongoose = node module for interaction with mongodb database
 
 connect to DB before spinning up server
 use async and await keywords to make a promise with try catch block
+
+
+===== NODEMON
+node utility that automatically restarts application when file changes detected
+
+===== ORDER
+when connecting to DB in project make operation async 
+only spin up server after connection to DB
+

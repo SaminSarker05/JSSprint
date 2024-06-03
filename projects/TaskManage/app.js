@@ -10,9 +10,10 @@ app.use("/api/v1/tasks", router);
 
 const PORT = 8000;
 
+// creates a promise
 const start = async () => {
   try {
-    await connectDB();
+    await connectDB(); // await for promise to be resolved before start finishes
     console.log('connected to DB...');
     app.listen(PORT, () => { console.log(`server listening on port ${PORT}...`); })
 
