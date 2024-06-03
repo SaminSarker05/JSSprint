@@ -20,6 +20,22 @@ mongoose = node module for interaction with mongodb database
 connect to DB before spinning up server
 use async and await keywords to make a promise with try catch block
 
+use mongoose.Schema({
+  name: String
+  completed: Boolean
+})
+to set up structure for ducments in db
+Collection = group of ducuments - table
+document = field value pairs - row in table
+
+create document schema for a collection
+export schema as a mongoose.model(name, schema) to allow class based interaction with controllers
+models = documents
+
+callback functions must be async when interacting with db -> still return back response
+await for model method
+.create()
+
 
 ===== NODEMON
 node utility that automatically restarts application when file changes detected
@@ -27,4 +43,9 @@ node utility that automatically restarts application when file changes detected
 ===== ORDER
 when connecting to DB in project make operation async 
 only spin up server after connection to DB
+
+
+===== PUT VS PATCH
+put is replacement of entire document
+patch is a partial replacement
 
