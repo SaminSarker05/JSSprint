@@ -1,0 +1,3 @@
+jwt used to restrict access to resources
+jwt = json web token
+if token exists user can access specific info
