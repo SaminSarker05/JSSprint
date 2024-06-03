@@ -1,3 +1,36 @@
 jwt used to restrict access to resources
 jwt = json web token
 if token exists user can access specific info
+
+STEPS:
+1. check if username password valid from request
+2. if valid create a jwt
+3. send jwt to frontend
+
+public and restricted routes
+
+user makes a login request
+response sends back a signed token
+all resposnes after must include signed token to be valid
+
+jwt -> has security feature; uses algorithm to encrypt info between parties
+
+http is stateless -> does not remember previous sent requests
+
+jwt = xxx.yyy.zzz
+xxx = heaer
+yyy = payload encoded
+zzz signature uses algorithm to encode
+
+to get tokens use node module jsonwebtoken -> use in controllers
+
+to make key -> send token to frontend -> add to frontend local storage
+const jwt = require('jsonwebtoken')
+
+pass in payload, secret key, expiration (optional)
+const token = jwt.sign({}, xxx, yyy)
+
+when jwt received from frontend part of req.headers.authorization
+to isolate token simply splice the string 
+
+to decode data use jwt.verify(token, secret key)
